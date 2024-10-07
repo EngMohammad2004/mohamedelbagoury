@@ -11301,6 +11301,19 @@ fieldset:disabled .btn {
 .services__pic {
   max-width: 100%;
 }
+/* عند شاشات الموبايل */
+@media (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .service-2-image {
+    order: 2; /* الصورة تظهر بعد النص */
+  }
+  .service-2-text {
+    order: 1; /* النص يظهر قبل الصورة */
+  }
+}
 
 .testimonials {
   position: relative;
